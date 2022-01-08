@@ -164,6 +164,7 @@ export default function About() {
             </div>
               <a href={Profile} download className='btn'>Download Profile<i className="fas fa-download"></i></a>
               <a href="https://www.linkedin.com/in/parthiban-nagaraj-6784241a/" target="_blank" className='btn'>Linked In<i className="fab fa-linkedin"></i></a>
+              <a href="https://github.com/parthi033" target="_blank" className='btn'>Github<i className="fab fa-github"></i></a>
             <Tag tags={webTechnology}></Tag>
             <Tag tags={testingTools}></Tag>
             <Tag tags={cssTools}></Tag>
