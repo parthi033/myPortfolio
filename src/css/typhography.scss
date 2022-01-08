@@ -1,0 +1,50 @@
+
+h1 {
+    color: #9900ff;
+    padding: 20px 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    &.page-title{
+        text-align: right;
+        text-transform: capitalize;
+        &:before {
+          content: "";
+          width: 1.25rem;
+          height: 0.25rem;
+          background: #9900ff;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 0.5rem 0 0;
+        }
+    }
+  }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #9c8c8c;
+    width: 100%;
+    padding: 0 0 0.5rem 0;
+    margin: 0;
+    border-bottom: 1px solid #333;
+    &.page-sub-title{
+        text-align: right;
+        text-transform: capitalize;
+    }
+  }
+  p{
+    &.profile-content{
+        text-align: right;
+    }
+  }
+@media (max-width: 1024px){
+    
+    h1.page-title, h2.page-sub-title{
+    text-align: center;
+    }
+    h1.page-title{
+        &:before {
+            display: none;
+        }
+    }
+}

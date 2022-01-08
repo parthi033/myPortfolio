@@ -1,0 +1,76 @@
+.aboutme-container {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.pi-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .pi-info {
+        min-width: 40%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+        color: #8c8c8c;
+        h2{
+            text-align: left;
+        }
+    }
+}
+
+
+.card-panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 1rem 0;
+    .card {
+        border: 1px solid #333;
+        border-radius: 4px;
+        padding: 1rem;
+        background: #222;
+        span {
+            display: flex;
+            &.title {
+                font-size: 2rem;
+                color: #FFF;
+            }
+            &.description {
+                color: #8c8c8c;
+                font-size: 1.25rem;
+                font-style: italic;
+            }
+        }
+    }
+}
+.contact-container{
+    color: #8c8c8c;    
+    i{
+        color: #6e00ff;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+@media(max-width: 1024px){
+    .pi-panel {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        .pi-info {
+            justify-content: flex-start;
+            span{
+                font-weight: 600;
+                padding-right: 0.5rem;
+            }
+        }
+    }
+    .card-panel {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0 1rem 0;
+        flex-direction: column;
+        .card{
+            margin: 0.5rem 0;
+        }
+    }
+}
