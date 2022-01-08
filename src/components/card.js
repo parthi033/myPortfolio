@@ -5,7 +5,7 @@ const Card = (Props) =>{
     return(
         <div className='card-container'>
             <div className="card">
-                <i className=''></i>
+                <i className=''>test</i>
             </div>
         </div>
     )
